@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>Portfolio: Carrie Mims</title>
-    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> 
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/grid.css">
 </head>
@@ -10,23 +10,40 @@
 
 <div id="wrapper">
     <header role="banner">
-        <div class="logo">
+        <div id="hdr-content">
             <h1>Carrie Mims</h1>
+
+            <nav>
+                <ul id="buttons">
+                    <li><a href="#"><img src="http://carriemims.com/assets/web/envelope-white.png" width="25px"></a></li>
+
+                    <li class="text-button"><a href="#">About</a></li>
+
+                    <li class="text-button"><a href="#">Projects</a></li>
+
+                    <li class="text-button"><a href="#">Full Stack Web Developer</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <nav>
+<!--<nav>
         <ul>
             <li><a href="#">About</a></li>
             <li><a href="#">Projects</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
-    </nav>
+    </nav> -->
 
     <main role="main">
         <!--<h3>Portfolio coming soon.</h3>-->
+        <div class="title-container">
+            <div class="titles">
+                <h2>Projects</h2>
+            </div>
+        </div>
 
-               <div id="project-nav">
+        <div id="project-nav">
             <ul>
                 <li><a href="#">All</a></li>
                 <li><a href="#">Javascript</a></li>
@@ -37,17 +54,17 @@
         <div class="row">
             <div class="col-3">
                 <div class="box gray" id="">
-                    <a href="https://sugalo23.github.io/Nasa_API/" target="_blank"><img src="http://www.carriemims.com/assets/web/Web-Nasa-Small.jpg" class="img-thumb" alt="Thumbnail for NASA API"></a>
+                    <a href="https://sugalo23.github.io/Nasa_API/" target="_blank"><img src="http://image.ibb.co/evurbS/Web_Nasa_Small.jpg" class="img-thumb" alt="Thumbnail for NASA API"></a>
                 </div>
             </div>
             <div class="col-3">
                 <div class="box gray" id="">
-                    <a href=" https://sugalo23.github.io/brewski_plat/" target="_blank"><img src="http://www.carriemims.com/assets/web/Web-PubCrawl-Small.jpg" class="img-thumb" alt="Thumbnail for NASA API"></a>
+                    <a href="https://sugalo23.github.io/brewski_plat/" target="_blank"><img src="http://image.ibb.co/jOTEVn/Web_Pub_Crawl_Small.jpg" class="img-thumb" alt="Thumbnail for NASA API"></a>
                 </div>
             </div>
             <div class="col-3">
                 <div class="box gray" id="">
-                    <a href="https://sugalo23.github.io/QuizApp/" target="_blank"><img src="http://www.carriemims.com/assets/web/Web-Quiz-Small.jpg" class="img-thumb" alt="Thumbnail for NASA API"></a>
+                    <a href="https://sugalo23.github.io/QuizApp/" target="_blank"><img src="http://image.ibb.co/iDYHGS/Web_Quiz_Small.jpg" class="img-thumb" alt="Thumbnail for NASA API"></a>
                 </div>
             </div>
             <div class="col-3">
@@ -57,37 +74,89 @@
             </div>
         </div>
 
- <!--       <div class="row">
-            <div class="col-3">
-                <div class="box gray" id="">
-                    <a href="#"><img src="http://www.carriemims.com/assets/web/Web-Nasa-Small.jpg" width="200px" alt="Thumbnail for NASA API"></a>
+
+        <div class="title-container">
+            <div class="titles">
+                <h2>About Carrie</h2>
+            </div>
+        </div>
+
+        <div id="about-container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="box about" id="">
+                        <h4>Responsive</h4>
+                        <p>User Interfaces that transform perfectly on any device.</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="box about" id="">
+                        <h4>Pixel-Perfect</h4>
+                        <p>A final product that is as pixel-perfect as its original design.</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="box about" id="">
+                        <h4>Dynamic</h4>
+                        <p>Web applications that come to life for a dynamic user experience.</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-3">
-                <div class="box gray" id="">
-                    <a href="#">thumb</a>
+
+            <div class="row">
+                <div class="col-6">
+                    <div class="box" id="">
+                        <h4>Brief Text</h4>
+                    </div>
                 </div>
-            </div>
-            <div class="col-3">
-                <div class="box gray" id="">
-                    <a href="#">thumb</a>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="box gray" id="">
-                    <a href="#">thumb</a>
+                <div class="col-6">
+                    <div class="box" id="">
+                        <h4>Languages</h4>
+                    </div>
                 </div>
             </div>
         </div>
-        -->
+
+        <div class="title-container">
+        <div class="titles">
+                <h2>Send Carrie a Message</h2>
+        </div>
+        <div id="contact-form-container">
+            <form action="#">
+                <ul id="contact-form">
+                    <li>
+                        <input class="contact-input contact-input-top" placeholder="First Name" type="text" id="fname" name="firstname">
+                    </li>
+
+                    <li>
+                        <input class="contact-input" placeholder="Last Name" type="text" id="lname" name="lastname">
+                    </li>
+
+                    <li>
+                        <input class="contact-input" placeholder="Email" type="text" id="email" name="email">
+                    </li>
+
+                    <li>
+                        <textarea class="contact-input contact-input-bottom" placeholder="Message" type="text" id="message" name="message"></textarea>
+                    </li>
+
+                    <li>
+                        <input type="submit" value="Submit" class="submit-button">
+                    </li>
+                </ul>
+            </form>
+        </div>
+        </div>
     </main>
 
     <footer>
-         <ul>
-            <li><a href="https://www.linkedin.com/in/carriedmims/" target="_blank">LinkedIn</a></li>
-            <li><a href="https://github.com/Sugalo23" target="_blank">GitHub</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+         <ul id="buttons">
+                <li><a href="#"><img src="http://carriemims.com/assets/web/envelope-white.png" width="25px"></a></li>
+
+                 <li><a href="https://github.com/Sugalo23" target="_blank"><img src="http://carriemims.com/assets/web/github-logo-wht.png" width="25px"></a></li>
+
+                <li><a href="https://www.linkedin.com/in/carriedmims/" target="_blank"><img src="http://carriemims.com/assets/web/linkedin-wht.png" width="25px"></a></li>
+            </ul>
     </footer>
 </div>
 

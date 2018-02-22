@@ -1,41 +1,102 @@
 body {
-	padding-top: 75px;
-	font-family: 'Slabo 27px', serif;
+    font-family: 'Roboto Condensed', sans-serif;
 	margin: 0 auto;
+	color: #363c3f;
+	background-image: url("http://www.carriemims.com/assets/web/bg-square-5.jpg");
+	background-repeat: repeat;
 }
 
-#wrapper {
-	max-width: 1280px;
-	margin: 0 auto;
+h1 {
+	font-size: 52px;
+	margin: 0;
+	color: #ffffff;
 }
 
-nav {
-	width: 100%;
-	margin: 0 auto;
-	background-color: #ffffff;
+h1, h2, h3{
+	font-weight: normal;
+}
+
+h4 {
+	color: #0078a6;
 	text-align: center;
-}
-
-nav ul {
-	display: flex;
-  justify-content: center;
-	list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-nav li {
-   	float: left;
-}
-
-nav li a {
-    display: block;
-    padding: 8px;
+	text-transform: uppercase;
 }
 
 header {
 	width: 100%;
+	padding: 40px 0 10px 0;
+	border-bottom: 2px #363c3f solid;
+}
+
+main {
+	width: 100%;
+	padding-top: 20px;
+	background-color: #ffffff;
+	border-bottom: 2px #363c3f solid;
+}
+
+footer {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	padding: 20px;
+}
+
+#wrapper {
+	margin: 0 auto;
+}
+
+#hdr-content {
+	margin: 0 auto;
+	max-width: 1090px;
+	text-align: right;
+}
+
+#buttons {
+	overflow: hidden;
+	list-style-type: none;
+  	margin: 0 auto;
+  	padding: 0;
+  	display: inline-block;
+}
+
+#buttons li {
+	float: right;
+}
+
+#buttons li a {
+    display: block;
+    padding: 6px;
+}
+
+.text-button {
+	background-color: #ffffff;
+	margin: 2px;
+	border-radius: 3px;
+	font-size: 16px;
+}
+
+.text-button a {
+	color: #363c3f;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.submit-button {
+   	background-color: #383838;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    margin: 0px 0 20px 0;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 0px 0px 8px 0px;
+}
+
+.submit-button:hover {
+	background-color: #484848;
 }
 
 .logo {
@@ -43,50 +104,68 @@ header {
 	margin-bottom: 15px;
 }
 
-h1 {
-	font-size: 36px;
-	margin: 0;
-}
-
-h1, h2, h3{
-	font-weight: normal;
-}
-
-main {
-	width: 100%;
-	padding-top: 20px;
-}
 
 .box {
-	background-color: #000000;
+	margin-bottom: 10px;
+	text-align: center;
+
 }
+
+.about {
+	margin: 10px 0 10px 0;
+
+}
+
 
 .img-thumb {
-  width: 100%;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+
 }
 
-footer {
-	width: 100%;
+#contact-form-container {
+	max-width: 400px;
 	margin: 0 auto;
-	text-align: center;
 }
 
-footer ul {
-	display: flex;
-  justify-content: center;
-	list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+#contact-form {
+	list-style: none;
+	padding: 0;
 }
 
-footer li {
-   	float: left;
+.contact-input {
+	width: 100%;
+	font-family: 'Roboto Condensed', sans-serif;
+	padding: 10px;
+	margin-bottom: 3px; 
+	font-size: 14px;
+	color: #3a9ecf;
+	border: 1px solid #B0B0B0;
 }
 
-footer li a {
-    display: block;
-    padding: 8px;
+.contact-input-top {
+	border-radius: 8px 0px 0px 0px;
+}
+
+.contact-input-bottom {
+	border-radius: 0px 0px 8px 0px;
+}
+
+.title-container {
+	max-width: 1090px;
+	margin: 0 auto;
+}
+
+.titles {
+	padding: 8px 0px 8px 20px;
+	font-size: 14px;
+	color: #ffffff;
+	background-color: #006a92;
+	border:0;
+	border-radius: 8px 0px 8px 0px;
 }
 
 #project-nav {
